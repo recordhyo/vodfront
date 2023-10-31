@@ -1,7 +1,6 @@
 import {useNavigate} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 import logo from "../../logo.png"
-import "./Header.css"
 
 const Header = () => {
     const navigate = new useNavigate();
@@ -38,29 +37,31 @@ const Header = () => {
 
     
     return (
-        <header>
-            <div id="a">
-            <div id="b">
-            <a id="logo" href="/">
-                <img alt="kakao" src={logo} width="50px"/></a>
-        <ul>
-          <li><a href="/">홈</a></li>
-          <li><a href="/">영화</a></li>
-          <li><a href="/">TV</a></li>
-        </ul>
+      <header class="p-3 bg-black text-white">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img src={logo} alt="logo" width="70px"/>
+            <span class="me-5"></span>
+          </a>
+  
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="/" class="nav-link px-2 text-secondary fs-5">홈</a></li>
+            <li><a href="/" class="nav-link px-2 text-white fs-5">영화</a></li>
+            <li><a href="/" class="nav-link px-2 text-white fs-5">TV</a></li>
 
-        <form class="Search">
-            <input type="text" />
-        </form>
-
-        <div class="button2">
-          <button type="button" class="btn btn-outline-light me-2">Login</button>
-          <button type="button" class="btn btn-warning">Sign-up</button>
+          </ul>
+  
+          <form class="col-6 col-sm-2 mb-3 mb-lg-0 me-lg-3 ">
+            <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search"/>
+          </form>
+  
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-danger">마이페이지</button>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-
+    </header>
     )
     
 }

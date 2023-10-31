@@ -4,15 +4,20 @@ import Login from "../Login";
 import Redirection from "../Redirection";
 import Home from "../Home"
 import Header from "../Components/Layout/Header";
+import Footer from "../Components/Layout/Footer";
+
 function AppRouter(){
     return(
         <BrowserRouter>
-        <Header/>
-            <Routes>
-                <Route exact path="/" element={<Home/>}/>
-                <Route exact path="/login" element={<Login/>}/>
-                <Route exact path='/accounts/kakao/login/callback/' element={<Redirection />} />
-            </Routes>
+            <Header/>
+            <div style={style}>
+                <Routes>
+                    <Route exact path="/" element={<Home/>}/>
+                    <Route exact path="/login" element={<Login/>}/>
+                    <Route exact path='/accounts/kakao/login/callback/' element={<Redirection />} />
+                </Routes>
+                </div>
+            <Footer/>
         </BrowserRouter>
 
     );
@@ -21,7 +26,7 @@ function AppRouter(){
 const style ={
     padding: '30px',
     width: '100%',
-    minHeight:'100vh'
+    minHeight:'70vh'
 
 }
 

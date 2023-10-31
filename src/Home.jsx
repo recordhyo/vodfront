@@ -1,8 +1,9 @@
 import React from "react";
+
 function Home(){
     return(
         <div>
-            <h1>인가코드 get</h1>
+            <h1>메인페이지</h1>
         </div>
 
     )
