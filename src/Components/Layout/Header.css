@@ -1,0 +1,65 @@
+header {
+    padding: 1rem;
+    background-color: black;
+}
+
+#a {
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#b {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    margin-bottom: 0.5rem
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0.5rem;
+    list-style: none;
+    flex: 0 0 auto;
+    width: auto;
+    margin-left: 3rem;
+    justify-content: flex-start;
+}
+
+li {
+    display: block;
+    text-decoration: none;
+    background: none;
+    border: 0;
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+    
+}
+
+li > a{
+    text-decoration-line: none;
+    color: white;
+}
+
+.Search {
+    display: inline-block;
+    align-items: center;
+    text-align: right;
+    width: 30px;
+}
+.Search > input {
+    float: right;
+}
