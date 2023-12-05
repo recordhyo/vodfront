@@ -20,7 +20,7 @@ function Redirection(){
     //     localStorage.setItem('name', r.data.user_name); // 일단 이름만 저장했다.
         
         navigate('/')
-
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
   
     return <div>로그인 중입니다.</div>;
